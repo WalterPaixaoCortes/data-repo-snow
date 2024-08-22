@@ -1,0 +1,27 @@
+pipeline:
+  outputs:
+    dev:
+      account: "{{ env_var('DBT_ACC') }}"
+      user:  "{{ env_var('DBT_USER') }}"
+      password:  "{{ env_var('DBT_PWD') }}"
+      role:  "{{ env_var('DBT_ROLE') }}"
+      
+      threads: 3
+      type: snowflake
+      
+      database:  "{{ env_var('DBT_DB') }}"
+      schema:  "{{ env_var('DBT_SCH') }}"
+      warehouse:  "{{ env_var('DBT_WH') }}"
+    prod:
+      account: "{{ env_var('DBT_ACC') }}"
+      user:  "{{ env_var('DBT_USER') }}"
+      password:  "{{ env_var('DBT_PWD') }}"
+      role:  "{{ env_var('DBT_ROLE') }}"
+      
+      threads: 3
+      type: snowflake
+      
+      database:  "{{ env_var('DBT_DB') }}"
+      schema:  "{{ env_var('DBT_SCH') }}"
+      warehouse:  "{{ env_var('DBT_WH') }}"
+  target:  "{{ env_var('DBT_TGT') }}"
