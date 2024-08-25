@@ -32,9 +32,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   pipeline:
     # Config indicated by + and applies to all files under models/example/
-    src:
-      schema: src
-      +materialized: table
     stg:
       schema: stg
       +materialized: table

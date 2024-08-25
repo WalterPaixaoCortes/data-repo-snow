@@ -1,0 +1,20 @@
+select
+    pokedex_id,
+    name,
+    type1,
+    type2,
+    hp,
+    attack,
+    defense,
+    sp_attack,
+    sp_defense,
+    speed,
+    bst,
+    mean,
+    std,
+    generation,
+    legendary,
+    height,
+    weight,
+    bmi
+from {{ ref("pokemon") }}
