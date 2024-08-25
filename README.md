@@ -1,6 +1,9 @@
 # data-repo-snow
 
-Este repositório contém datasets para estudo de visualização de dados. Os dados estão armazenados em um data warehouse Snowflake. A modelagem dos datasets foi feita utilizando dbt.
+Este repositório contém datasets para estudo de visualização de dados. Os dados estão armazenados em um data warehouse Snowflake. A modelagem dos datasets foi feita utilizando dbt. 
+
+> For an english version of this README, please check the file [README_EN.MD](README_EN.MD).
+
 
 ## Objetivo
 
