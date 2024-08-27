@@ -1,2 +1,2 @@
-select pokedex_id, trim(value) as ability
-from {{ ref("pokemon") }}, lateral split_to_table(abilities, ',')
+select pokedex_number, ability, ability_gen, ability_category, activation_requirement
+from {{ ref("pokemon") }}

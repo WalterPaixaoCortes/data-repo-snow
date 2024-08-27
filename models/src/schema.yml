@@ -4,5 +4,6 @@ sources:
   - name: src
     tables:
       - name: pokemons_tbl
+      - name: pokemons_2_tbl
       - name: world_population_tbl
       - name: ds_salaries_tbl

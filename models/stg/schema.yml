@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: pokemon
+    tests:
+      - not_null:
+          column_name: "pokedex_number"
+          column_name: "name"
+          column_name: "type1"
+          column_name: "generation_desc"
+      - accepted_values:
+          column_name: "type1"
+          values: ["Normal", "Fire", "Water", "Electric", "Grass", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"]
+          column_name: "type2"
+          values: ["Normal", "Fire", "Water", "Electric", "Grass", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"]
+          column_name: generation_desc
+          values: ['Gen. 1', 'Gen. 2', 'Gen. 3', 'Gen. 4', 'Gen. 5', 'Gen. 6', 'Gen. 7', 'Gen. 8', 'Gen. 9']
+  - name: world_population
+  - name: ds_salaries
