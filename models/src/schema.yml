@@ -7,3 +7,4 @@ sources:
       - name: pokemons_2_tbl
       - name: world_population_tbl
       - name: ds_salaries_tbl
+      - name: pokemons_3_tbl
